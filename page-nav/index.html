@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<style type="text/css">
+		body{
+			background-color: white;
+		}
+	</style>
+	<body>
+		<a href="/blog">BLOG</a>
+
+		<button>Tam Ekran Yap</button>
+		<video src="/page-nav/leila.mp4" controls></video>
+
+		<script type="text/javascript">
+		
+		document.querySelector("button").addEventListener('click' , ()=>{
+			document.querySelector("video").requestFullscreen();
+		})
+
+		document.write(document.lastElementChild)
+		</script>
+	</body>
+</html>
