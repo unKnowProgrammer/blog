@@ -69,6 +69,15 @@ const posts = [
 				description : "Bu blog proje içerisindeki bir dosyanın md türünden karşılığını anlamak için yazılmıştır",
 				date : "6 Mart 2020",
 				title : "ÖRNEK MD"
+			},
+
+			{
+				subTitle : "CORONA TÜRKİYEDE",
+				description : "Korona virüsünün türkiyeye gelmesi hakkındaki görüşlerimi paylaştım",
+				blogURL : "corona-in-turkey",
+				md : "coturk",
+				date : "25 Mart 2020",
+				title : "Corona Türkiye'ye geldi"
 			}
  
 
