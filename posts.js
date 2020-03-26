@@ -86,6 +86,14 @@ const posts = [
 				date : "26 Mart 2020",
 				md : "programlama-dilleri",
 				title : "Programlama Dilleri"
+			},
+			{
+				subTitle : "HERKESE MERHABA BEN MİYİM",
+				description : "Bu blogda programlama dillerini anlattık iyi okumalar...",
+				blogURL : "/programlama-dillerimi-acaba",
+				date : "26 Mart 2020",
+				md : "programlama-dilleri",
+				title : "Programlama Dilleri"
 			}
  
 
