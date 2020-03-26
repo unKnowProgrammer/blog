@@ -78,6 +78,14 @@ const posts = [
 				md : "coturk",
 				date : "25 Mart 2020",
 				title : "Corona Türkiye'ye geldi"
+			},
+			{
+				subTitle : "PROGRAMLAMA DİLLERİ",
+				description : "Bu blogda programlama dillerini anlattık iyi okumalar...",
+				blogURL : "/programlama-dilleri",
+				date : "26 Mart 2020",
+				md : "programlama-dilleri",
+				title : "Programlama Dilleri"
 			}
  
 
