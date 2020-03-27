@@ -54,7 +54,7 @@ http.createServer((request,response)=>{
 			
 
 		else if(request.url == "/"){
-			response.write('<html><style>'+blogStyle+'</style><head><title>BLOG</title><meta name = "viewport" content = "width=device-width user-scalable=no"><meta charset="utf-8"></head><header><div id = "name">'+"FURKAN <br/> BLOG"+ '</div><nav><a href = "https://www.instagram.com/furkan_gologlu/?hl=tr" target = "_blank">Instagram</a>|<a href = "#">Twitter</a></nav></header><body><div id = "posts">')	
+			response.write('<html><style>'+blogStyle+'</style><head><title>BLOG</title><meta name = "viewport" content = "width=device-width user-scalable=no"><meta name = "theme-color" content = "black"><meta charset="utf-8"></head><header><div id = "name">'+"FURKAN <br/> BLOG"+ '</div><nav><a href = "https://www.instagram.com/furkan_gologlu/?hl=tr" target = "_blank">Instagram</a>|<a href = "#">Twitter</a></nav></header><body><div id = "posts">')	
 			for(var k = posts.length-1; k>=0; k--){
 					response.write('<div id = "post"><a href = "'+posts[k].blogURL+'" id = "title">'+posts[k].subTitle+'</a><div id = "description">'+posts[k].description+'</div><div id = "date">'+posts[k].date+'</div></div>');
 				}
@@ -77,4 +77,4 @@ http.createServer((request,response)=>{
 
 	response.end();
 
-	}).listen(process.env.PORT);
+	}).listen(80);
