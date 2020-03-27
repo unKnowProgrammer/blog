@@ -33,6 +33,8 @@ http.createServer((request,response)=>{
 
 	var blog;
 
+	//var header = fs.readFileSync('./page-parts/header.html','utf8');
+
 	for(var j = 0; j<posts.length; j++){
 		if(request.url == posts[j].blogURL){
 			blog = true;
@@ -85,8 +87,7 @@ http.createServer((request,response)=>{
 							</div>
 						</div>
 					</body>
-					</html>`
-					)
+					</html>`)
 
 				}
 			}
@@ -105,7 +106,13 @@ http.createServer((request,response)=>{
 			</head>
 
 			<body>
-				${header}
+				<header>
+				<div id = "name"> FURKAN <br/> BLOG </div>
+					<nav>
+						<a href = "https://www.instagram.com/furkan_gologlu/?hl=tr" target = "_blank">Instagram</a>
+						<a href = "#">Twitter</a>
+					</nav>
+				</header>
 				<div id = "posts">`)	
 
 			for(var k = posts.length-1; k>=0; k--){
@@ -137,4 +144,4 @@ http.createServer((request,response)=>{
 
 	response.end();
 
-	}).listen(process.env.PORT);
+	}).listen(80);
