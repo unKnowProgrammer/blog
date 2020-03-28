@@ -50,13 +50,23 @@ http.createServer((request,response)=>{
 					response.write(`
 					<html>
 					<head>
-						<title>'+posts[i].title+'</title>
+						<title>${posts[i].title}</title>
 						<meta charset = "utf-8"> 
 						<meta name = "viewport" content = "width = device-width , user-scalable = no">
 						<meta name = "theme-color" content = "black">
-						<style>${blogContentStyle}</style>
+						<style>
+							${blogContentStyle}
+							
+						</style>
 					</head>
 					<body>
+					<header>
+					<div id = "name"> FURKAN <br/> BLOG </div>
+					<nav>
+						<a href = "https://www.instagram.com/furkan_gologlu/?hl=tr" target = "_blank">Instagram</a>
+						<a href = "#">Twitter</a>
+					</nav>
+					</header>
 						<div class="container">
 							<article>
 								<div id = "article-title">${posts[i].subTitle}</div>
@@ -115,16 +125,16 @@ http.createServer((request,response)=>{
 				</header>
 				<div id = "posts">`)	
 
-			for(var k = posts.length-1; k>=0; k--){
+			posts.forEach((post) => {
 					response.write(`
 
 					<div id = "post">
-						<a href = "${posts[k].blogURL}" id = "title">${posts[k].subTitle}</a>
-						<div id = "description">${posts[k].description}</div>
-						<div id = "date">${posts[k].date}</div>
+						<a href = "${post.blogURL}" id = "title">${post.subTitle}</a>
+						<div id = "description">${post.description}</div>
+						<div id = "date">${post.date}</div>
 					</div>`);
 
-				}
+				})
 			response.write('</div></body></html>');
 		}
 	
